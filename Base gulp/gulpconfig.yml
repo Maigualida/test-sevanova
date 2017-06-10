@@ -1,0 +1,117 @@
+  # ------------------------------------------
+  # Autoprefixer (https://github.com/postcss/autoprefixer)
+  # ------------------------------------------
+  # browsers: target browsers.
+  # ------------------------------------------
+  autoprefixer: 
+    browsers: 
+      - "> 1%"
+      - "ie >= 10"
+      - "last 2 versions"
+    cascade: false
+  # ------------------------------------------
+  # SASS
+  # ------------------------------------------
+  # Compile SASS files.
+  # ------------------------------------------
+  # Template:
+  # ------------------------------------------
+  #      public:
+  #        src:
+  #          - "public/scss/**/*.scss"
+  #        dst: "public/css"
+  # ------------------------------------------
+  # settings: settings used by SASS during
+  #           compilation.
+  # ------------------------------------------
+  sass: 
+    tasks: 
+      public: 
+        src: 
+          - "integration/sass/**/*.scss"
+        dst: "www/css"
+    settings: 
+      errLogToConsole: true
+      outputStyle: "compressed"
+  # ------------------------------------------
+  # Fonts (https://www.npmjs.com/package/gulp-iconfont)
+  # ------------------------------------------
+  # Build font files with SVG.
+  # ------------------------------------------
+  # Template:
+  # ------------------------------------------
+  #      custom:
+  #        src:
+  #          - "svg/*.svg"
+  #        dst: "fonts"
+  #        sass:
+  #          dst: "scss"
+  #          rel: "../fonts"
+  # ------------------------------------------
+  fonts: 
+    tasks: 
+      custom: 
+        src: 
+          - "integration/svg/*.svg"
+        dst: "www/fonts"
+        sass: 
+          dst: "integration/sass/utils"
+          rel: "../fonts"
+  # ------------------------------------------
+  # JavaScript
+  # ------------------------------------------
+  # Check, concatenate and minify JavaScript
+  # files.
+  # ------------------------------------------
+  # Template:
+  # ------------------------------------------
+  #      public:
+  #        src:
+  #          - "public/js/seva-designmailer-public.js"
+  #        dst: "public/js"
+  #        filename: "all.js"
+  # ------------------------------------------
+  # jshint_exclude: exclude some files to
+  #                 jshint check.
+  # ------------------------------------------
+  javascript: 
+    tasks: 
+      public: 
+        src: 
+          - "integration/js/vendor/**/*.js"
+          - "integration/js/partials/**/*.js"
+          - "integration/js/main.js"
+        dst: "www/js"
+        filename: "all.js"
+    jshint_exclude: 
+      - "integration/js/vendor/**/*.js"
+  # ------------------------------------------
+  # Images
+  # ------------------------------------------
+  # Minify images
+  # ------------------------------------------
+  # Template:
+  # ------------------------------------------
+  #      public:
+  #        src:
+  #          - "integration/images/**/*.png"
+  #          - "integration/images/**/*.jpg"
+  #          - "integration/images/**/*.jpeg"
+  #          - "integration/images/**/*.gif"
+  #          - "integration/images/**/*.svg"
+  #        dst: "public/images"
+  #        settings:
+  #          optimizationLevel: 4
+  # ------------------------------------------
+  images:
+    tasks:
+      public:
+        src:
+          - "integration/images/**/*.png"
+          - "integration/images/**/*.jpg"
+          - "integration/images/**/*.jpeg"
+          - "integration/images/**/*.gif"
+          - "integration/images/**/*.svg"
+        dst: "www/images"
+        settings:
+          optimizationLevel: 4

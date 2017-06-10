@@ -1,0 +1,32 @@
+// Canaro Book
+@font-face {
+    font-family: 'Canaro';
+    src: url('../fonts/2946AC_0_0.eot');
+    src: url('../fonts/2946AC_0_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2946AC_0_0.woff') format('woff'),
+        url('../fonts/2946AC_0_0.ttf') format('truetype');
+    font-weight: 400;
+}
+
+// Canaro Bold
+@font-face {
+    font-family: 'Canaro';
+    src: url('../fonts/2946AC_5_0.eot');
+    src: url('../fonts/2946AC_5_0.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/2946AC_5_0.woff') format('woff'),
+         url('../fonts/2946AC_5_0.ttf') format('truetype');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    src: url('../fonts/Merriweather-BoldItalic.eot');
+    src: url('../fonts/Merriweather-BoldItalic.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Merriweather-BoldItalic.woff2') format('woff2'),
+        url('../fonts/Merriweather-BoldItalic.woff') format('woff'),
+        url('../fonts/Merriweather-BoldItalic.ttf') format('truetype'),
+        url('../fonts/Merriweather-BoldItalic.svg#Merriweather-BoldItalic') format('svg');
+}
+
+$canaro: "Canaro", sans-serif;
+$merriweather: "Merriweather", serif;

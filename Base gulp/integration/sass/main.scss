@@ -1,0 +1,28 @@
+/* Reset */
+@import "utils/reset";
+@import "utils/normalize";
+
+/* utils */
+@import "utils/mixins";
+@import "utils/helpers";
+@import "utils/breakpoint";
+
+/* base */
+@import "base/colors";
+@import "base/typography";
+@import "base/animations";
+
+
+/* ====== Templates ==================================================================== */
+// @import here your templates files (ex. @import "templates/header";)
+
+
+/* ====== Global ======================================================================= */
+body {
+    font-family: $canaro;
+    font-size: 1.4rem;
+}
+
+
+/* ====== Plugins ==================================================================== */
+// @import here your plugins files (ex. @import "plugins/bxslider";)

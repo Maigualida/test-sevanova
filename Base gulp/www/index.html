@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="fr_FR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Test inté</title>
+
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav>
+        <img class="logoStyle" src="images/logo-sevanova.svg" alt="logo_sevanova">
+    </nav>
+    <div class="container">
+        <div class="row box">
+            <div class="col-xs-12 col-md-4">
+                <div class="boxCat" id="box1">
+                    <img src="images/chat-01.jpg" alt="">
+                    <div class="textCats">
+                        <h2>GRUMPY CAT</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                            et dolore magna aliqua. </p>
+                    </div>
+                    <div class=" row plusInfo">
+                        <p class="col-xs-8 plusText">En savoir plus</p>
+                        <a class="col-xs-4 plusLink"><img src="images/arrow-right.svg" alt=""></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-md-4">
+                <div class="boxCat" id="box2">
+                    <div class="boxCat">
+                        <img src="images/chat-02.jpg" alt="">
+                        <div class="textCats">
+                            <h2>DUBSTEP CAT</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class=" row plusInfo">
+                            <p class="col-xs-8 plusText">En savoir plus</p>
+                            <a class="col-xs-4 plusLink"><img src="images/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xs-12 col-md-4">
+                <div class="boxCat">
+                    <div class="boxCat" id="box3">
+                        <img src="images/chat-03.jpg" alt="">
+                        <div class="textCats">
+                            <h2>SNOOPYBABE</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                                labore et dolore magna aliqua. </p>
+                        </div>
+                        <div class=" row plusInfo">
+                            <p class="col-xs-8 plusText">En savoir plus</p>
+                            <a class="col-xs-4 plusLink"><img src="images/arrow-right.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--end row-->
+
+    <div class="moreInfo">
+        <h3>Plus D'Informations</h3>
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+        <h4>Lorem ipsum dolor sit amet</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
+            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+    </div>
+
+    <footer>
+        <div class="contFooter">
+            <p><span>Mentions Légales &ampCVG</span> - <span>Voir notre Blog</span> - <span>Extranet Sevanova</span></p>
+            <p>&copy; Sevanova 2017</p>
+        </div>
+    </footer>
+
+</body>
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function () {
+        $(".moreInfo").hide();
+        $("#box1").click(function () {
+            $(".moreInfo").toggle();
+        });
+        $("#box2").click(function () {
+            $(".moreInfo").toggle();
+        });
+        $("#box3").click(function () {
+            $(".moreInfo").toggle();
+        });
+    });
+
+</script>
+
+<script src="js/all.min.js"></script>
+
+</html>
